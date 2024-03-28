@@ -11,9 +11,9 @@ The project adheres closely to the principles of Clean Architecture, with a focu
 
 ## Next Steps
 
--- SwiftData persistance
--- Developers CRUD
--- Tasks CRUD
+- **SwiftData persistance**
+- **Developers CRUD**
+- **Tasks CRUD**
 
 ## Features
 
