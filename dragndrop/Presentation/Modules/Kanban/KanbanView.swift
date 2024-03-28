@@ -8,34 +8,46 @@
 import SwiftUI
 
 struct KanbanView: View {
-    
-    let title: String
-    let tasks: [DeveloperTaskEntity]
-    let isTargeted: Bool
-    
+
+    let kanban: KanbanEntity
+
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(title).font(.footnote.bold())
-            
+        VStack(alignment: .center) {
+            Text(kanban.title)
+                .font(.footnote.bold())
+
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .frame(maxWidth: .infinity)
-                    .foregroundColor(isTargeted ? .teal.opacity(0.15) : Color(.secondarySystemFill))
-                
-                VStack(alignment: .leading, spacing: 12) {
-                    ForEach(tasks, id: \.id) { task in
-                        Text(task.title)
+                    .foregroundColor(kanban.isTargeted ? .teal.opacity(0.15) : Color(kanban.backgroundColor))
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 12) {
+                        ForEach(kanban.tasks, id: \.id) { task in
+                            VStack(alignment: .leading,
+                                   spacing: 8) {
+                                Text(task.title)
+                                    .font(.title)
+                                Text("@\(task.owner)")
+                                    .foregroundColor(.cyan)
+                            }
+                            .draggable(task)
                             .padding(12)
+                            .shadow(radius: 1, x: 1, y: 1)
                             .background(Color(uiColor: .secondarySystemGroupedBackground))
                             .cornerRadius(8)
-                            .shadow(radius: 1, x: 1, y: 1)
-                            .draggable(task)
+                        }
+                        .padding(EdgeInsets(top: 0,
+                                            leading: 2,
+                                            bottom: 0,
+                                            trailing: 2))
+                        Spacer()
                     }
-                    
-                    Spacer()
+                    .padding(.vertical)
                 }
-                .padding(.vertical)
             }
         }
     }
+}
+#Preview {
+    KanbanView(kanban: .mock)
 }

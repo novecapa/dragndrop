@@ -17,17 +17,19 @@ struct DeveloperTaskEntity: Codable, Hashable, Transferable {
     static var transferRepresentation: some TransferRepresentation {
         CodableRepresentation(contentType: .developerTask)
     }
-    
+
     static let mock: [DeveloperTaskEntity] = [
-        DeveloperTaskEntity(id: UUID(),title: "Migrate to new API from NG .dev",
-                      owner: "Josep",
-                      note: "Note 1"),
         DeveloperTaskEntity(id: UUID(),
-                      title: "Learn about GeometryReader",
-                      owner: "Josep",
-                      note: "Note 2"),
+                            title: "Migrate to new API from NG .dev",
+                            owner: "Josep",
+                            note: "Note 1"),
         DeveloperTaskEntity(id: UUID(),
-                      title: "Technical Coffee",
-                      owner: "Josep",
-                      note: "Note 3")]
+                            title: "Learn about GeometryReader",
+                            owner: "Josep",
+                            note: "Note 2"),
+        DeveloperTaskEntity(id: UUID(),
+                            title: "Technical Coffee",
+                            owner: "Josep",
+                            note: "Note 3")
+    ]
 }

@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		721411B12BB5638E0076A775 /* dragndropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411B02BB5638E0076A775 /* dragndropApp.swift */; };
+		721411B12BB5638E0076A775 /* DragndropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411B02BB5638E0076A775 /* DragndropApp.swift */; };
 		721411B32BB5638E0076A775 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411B22BB5638E0076A775 /* MainView.swift */; };
 		721411B52BB5638F0076A775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721411B42BB5638F0076A775 /* Assets.xcassets */; };
 		721411B82BB5638F0076A775 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721411B72BB5638F0076A775 /* Preview Assets.xcassets */; };
-		721411C22BB5638F0076A775 /* dragndropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411C12BB5638F0076A775 /* dragndropTests.swift */; };
-		721411CC2BB5638F0076A775 /* dragndropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411CB2BB5638F0076A775 /* dragndropUITests.swift */; };
-		721411CE2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411CD2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift */; };
+		721411C22BB5638F0076A775 /* DragndropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411C12BB5638F0076A775 /* DragndropTests.swift */; };
+		721411CC2BB5638F0076A775 /* DragndropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411CB2BB5638F0076A775 /* DragndropUITests.swift */; };
+		721411CE2BB5638F0076A775 /* DragndropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411CD2BB5638F0076A775 /* DragndropUITestsLaunchTests.swift */; };
 		721411E92BB59EB70076A775 /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411E82BB59EB70076A775 /* CustomExtensions.swift */; };
 		721411EC2BB59EDA0076A775 /* DeveloperTaskEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411EB2BB59EDA0076A775 /* DeveloperTaskEntity.swift */; };
 		721411EF2BB59F310076A775 /* KanbanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411EE2BB59F310076A775 /* KanbanView.swift */; };
+		727F6D5A2BB5E23000A5D4D8 /* KanbanEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F6D592BB5E23000A5D4D8 /* KanbanEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,19 +39,20 @@
 
 /* Begin PBXFileReference section */
 		721411AD2BB5638E0076A775 /* dragndrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dragndrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		721411B02BB5638E0076A775 /* dragndropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragndropApp.swift; sourceTree = "<group>"; };
+		721411B02BB5638E0076A775 /* DragndropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragndropApp.swift; sourceTree = "<group>"; };
 		721411B22BB5638E0076A775 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		721411B42BB5638F0076A775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		721411B72BB5638F0076A775 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		721411BD2BB5638F0076A775 /* dragndropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dragndropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		721411C12BB5638F0076A775 /* dragndropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragndropTests.swift; sourceTree = "<group>"; };
+		721411C12BB5638F0076A775 /* DragndropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragndropTests.swift; sourceTree = "<group>"; };
 		721411C72BB5638F0076A775 /* dragndropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dragndropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		721411CB2BB5638F0076A775 /* dragndropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragndropUITests.swift; sourceTree = "<group>"; };
-		721411CD2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragndropUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		721411CB2BB5638F0076A775 /* DragndropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragndropUITests.swift; sourceTree = "<group>"; };
+		721411CD2BB5638F0076A775 /* DragndropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragndropUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		721411DA2BB58D890076A775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		721411E82BB59EB70076A775 /* CustomExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
 		721411EB2BB59EDA0076A775 /* DeveloperTaskEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTaskEntity.swift; sourceTree = "<group>"; };
 		721411EE2BB59F310076A775 /* KanbanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanView.swift; sourceTree = "<group>"; };
+		727F6D592BB5E23000A5D4D8 /* KanbanEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,7 @@
 		721411C02BB5638F0076A775 /* dragndropTests */ = {
 			isa = PBXGroup;
 			children = (
-				721411C12BB5638F0076A775 /* dragndropTests.swift */,
+				721411C12BB5638F0076A775 /* DragndropTests.swift */,
 			);
 			path = dragndropTests;
 			sourceTree = "<group>";
@@ -134,8 +136,8 @@
 		721411CA2BB5638F0076A775 /* dragndropUITests */ = {
 			isa = PBXGroup;
 			children = (
-				721411CB2BB5638F0076A775 /* dragndropUITests.swift */,
-				721411CD2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift */,
+				721411CB2BB5638F0076A775 /* DragndropUITests.swift */,
+				721411CD2BB5638F0076A775 /* DragndropUITestsLaunchTests.swift */,
 			);
 			path = dragndropUITests;
 			sourceTree = "<group>";
@@ -205,7 +207,7 @@
 		721411E32BB59E530076A775 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				721411B02BB5638E0076A775 /* dragndropApp.swift */,
+				721411B02BB5638E0076A775 /* DragndropApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -237,6 +239,7 @@
 		721411E72BB59E940076A775 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				727F6D582BB5E22100A5D4D8 /* Kanban */,
 				721411EA2BB59EC00076A775 /* Developers */,
 			);
 			path = Entities;
@@ -258,6 +261,14 @@
 			path = Kanban;
 			sourceTree = "<group>";
 		};
+		727F6D582BB5E22100A5D4D8 /* Kanban */ = {
+			isa = PBXGroup;
+			children = (
+				727F6D592BB5E23000A5D4D8 /* KanbanEntity.swift */,
+			);
+			path = Kanban;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,6 +279,7 @@
 				721411A92BB5638E0076A775 /* Sources */,
 				721411AA2BB5638E0076A775 /* Frameworks */,
 				721411AB2BB5638E0076A775 /* Resources */,
+				727F6D572BB5E09700A5D4D8 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -383,6 +395,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		727F6D572BB5E09700A5D4D8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		721411A92BB5638E0076A775 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -392,7 +425,8 @@
 				721411B32BB5638E0076A775 /* MainView.swift in Sources */,
 				721411EF2BB59F310076A775 /* KanbanView.swift in Sources */,
 				721411EC2BB59EDA0076A775 /* DeveloperTaskEntity.swift in Sources */,
-				721411B12BB5638E0076A775 /* dragndropApp.swift in Sources */,
+				721411B12BB5638E0076A775 /* DragndropApp.swift in Sources */,
+				727F6D5A2BB5E23000A5D4D8 /* KanbanEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721411C22BB5638F0076A775 /* dragndropTests.swift in Sources */,
+				721411C22BB5638F0076A775 /* DragndropTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +442,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721411CE2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift in Sources */,
-				721411CC2BB5638F0076A775 /* dragndropUITests.swift in Sources */,
+				721411CE2BB5638F0076A775 /* DragndropUITestsLaunchTests.swift in Sources */,
+				721411CC2BB5638F0076A775 /* DragndropUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +592,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"dragndrop/Preview Content\"";
 				DEVELOPMENT_TEAM = SQPG2GUVW5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dragndrop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -588,6 +623,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"dragndrop/Preview Content\"";
 				DEVELOPMENT_TEAM = SQPG2GUVW5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dragndrop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
