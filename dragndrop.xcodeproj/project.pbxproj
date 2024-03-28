@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		721411B12BB5638E0076A775 /* dragndropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411B02BB5638E0076A775 /* dragndropApp.swift */; };
-		721411B32BB5638E0076A775 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411B22BB5638E0076A775 /* ContentView.swift */; };
+		721411B32BB5638E0076A775 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411B22BB5638E0076A775 /* MainView.swift */; };
 		721411B52BB5638F0076A775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721411B42BB5638F0076A775 /* Assets.xcassets */; };
 		721411B82BB5638F0076A775 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721411B72BB5638F0076A775 /* Preview Assets.xcassets */; };
 		721411C22BB5638F0076A775 /* dragndropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411C12BB5638F0076A775 /* dragndropTests.swift */; };
 		721411CC2BB5638F0076A775 /* dragndropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411CB2BB5638F0076A775 /* dragndropUITests.swift */; };
 		721411CE2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411CD2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift */; };
+		721411E92BB59EB70076A775 /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411E82BB59EB70076A775 /* CustomExtensions.swift */; };
+		721411EC2BB59EDA0076A775 /* DeveloperTaskEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411EB2BB59EDA0076A775 /* DeveloperTaskEntity.swift */; };
+		721411EF2BB59F310076A775 /* KanbanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721411EE2BB59F310076A775 /* KanbanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		721411AD2BB5638E0076A775 /* dragndrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dragndrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		721411B02BB5638E0076A775 /* dragndropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragndropApp.swift; sourceTree = "<group>"; };
-		721411B22BB5638E0076A775 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		721411B22BB5638E0076A775 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		721411B42BB5638F0076A775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		721411B72BB5638F0076A775 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		721411BD2BB5638F0076A775 /* dragndropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dragndropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,10 @@
 		721411C72BB5638F0076A775 /* dragndropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dragndropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		721411CB2BB5638F0076A775 /* dragndropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragndropUITests.swift; sourceTree = "<group>"; };
 		721411CD2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragndropUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		721411DA2BB58D890076A775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		721411E82BB59EB70076A775 /* CustomExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
+		721411EB2BB59EDA0076A775 /* DeveloperTaskEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTaskEntity.swift; sourceTree = "<group>"; };
+		721411EE2BB59F310076A775 /* KanbanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +101,15 @@
 		721411AF2BB5638E0076A775 /* dragndrop */ = {
 			isa = PBXGroup;
 			children = (
-				721411B02BB5638E0076A775 /* dragndropApp.swift */,
-				721411B22BB5638E0076A775 /* ContentView.swift */,
-				721411B42BB5638F0076A775 /* Assets.xcassets */,
+				721411DA2BB58D890076A775 /* Info.plist */,
+				721411DB2BB59E050076A775 /* Constants */,
+				721411DC2BB59E0B0076A775 /* Common */,
+				721411DD2BB59E100076A775 /* Helpers */,
+				721411DE2BB59E170076A775 /* Manager */,
+				721411DF2BB59E1E0076A775 /* Data */,
+				721411E02BB59E240076A775 /* Domain */,
+				721411E12BB59E2B0076A775 /* Presentation */,
+				721411E22BB59E350076A775 /* Resources */,
 				721411B62BB5638F0076A775 /* Preview Content */,
 			);
 			path = dragndrop;
@@ -125,6 +138,124 @@
 				721411CD2BB5638F0076A775 /* dragndropUITestsLaunchTests.swift */,
 			);
 			path = dragndropUITests;
+			sourceTree = "<group>";
+		};
+		721411DB2BB59E050076A775 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		721411DC2BB59E0B0076A775 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				721411E82BB59EB70076A775 /* CustomExtensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		721411DD2BB59E100076A775 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		721411DE2BB59E170076A775 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		721411DF2BB59E1E0076A775 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		721411E02BB59E240076A775 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				721411E62BB59E8F0076A775 /* UseCases */,
+				721411E72BB59E940076A775 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		721411E12BB59E2B0076A775 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				721411E32BB59E530076A775 /* App */,
+				721411E42BB59E5D0076A775 /* Modules */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		721411E22BB59E350076A775 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				721411B42BB5638F0076A775 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		721411E32BB59E530076A775 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				721411B02BB5638E0076A775 /* dragndropApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		721411E42BB59E5D0076A775 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				721411E52BB59E670076A775 /* Main */,
+				721411ED2BB59F230076A775 /* Kanban */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		721411E52BB59E670076A775 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				721411B22BB5638E0076A775 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		721411E62BB59E8F0076A775 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		721411E72BB59E940076A775 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				721411EA2BB59EC00076A775 /* Developers */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		721411EA2BB59EC00076A775 /* Developers */ = {
+			isa = PBXGroup;
+			children = (
+				721411EB2BB59EDA0076A775 /* DeveloperTaskEntity.swift */,
+			);
+			path = Developers;
+			sourceTree = "<group>";
+		};
+		721411ED2BB59F230076A775 /* Kanban */ = {
+			isa = PBXGroup;
+			children = (
+				721411EE2BB59F310076A775 /* KanbanView.swift */,
+			);
+			path = Kanban;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721411B32BB5638E0076A775 /* ContentView.swift in Sources */,
+				721411E92BB59EB70076A775 /* CustomExtensions.swift in Sources */,
+				721411B32BB5638E0076A775 /* MainView.swift in Sources */,
+				721411EF2BB59F310076A775 /* KanbanView.swift in Sources */,
+				721411EC2BB59EDA0076A775 /* DeveloperTaskEntity.swift in Sources */,
 				721411B12BB5638E0076A775 /* dragndropApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,11 +559,12 @@
 				DEVELOPMENT_TEAM = SQPG2GUVW5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dragndrop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +589,12 @@
 				DEVELOPMENT_TEAM = SQPG2GUVW5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dragndrop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
