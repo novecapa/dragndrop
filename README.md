@@ -9,6 +9,12 @@ Demo project contains data like Kanban developer tasks, with three columns to mo
 This repository contains a demo project built using SwiftUI, connected. 
 The project adheres closely to the principles of Clean Architecture, with a focus on SOLID principles. Notably, no third-party libraries have been used in the development of this project.
 
+## Next Steps
+
+-- SwiftData persistance
+-- Developers CRUD
+-- Tasks CRUD
+
 ## Features
 
 - **SwiftUI Implementation**: The user interface is built entirely using SwiftUI, Apple's modern framework for building user interfaces across all Apple platforms.
