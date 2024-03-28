@@ -4,7 +4,10 @@
 
 Drag and Drop elements around columns
 
-This repository contains a demo project built using SwiftUI, connected. The project adheres closely to the principles of Clean Architecture, with a focus on SOLID principles. Notably, no third-party libraries have been used in the development of this project.
+Demo project contains data like Kanban developer tasks, with three columns to move it
+
+This repository contains a demo project built using SwiftUI, connected. 
+The project adheres closely to the principles of Clean Architecture, with a focus on SOLID principles. Notably, no third-party libraries have been used in the development of this project.
 
 ## Features
 
