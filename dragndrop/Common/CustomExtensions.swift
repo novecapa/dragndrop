@@ -12,3 +12,9 @@ import UniformTypeIdentifiers
 extension UTType {
     static let developerTask = UTType(exportedAs: "com.daapcoders.developertastk")
 }
+
+extension Array where Element: Hashable {
+    var removeDuplicates: [Element] {
+        Array(Set(self))
+    }
+}

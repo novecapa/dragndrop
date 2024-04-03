@@ -9,8 +9,7 @@ import SwiftUI
 
 struct MainView: View {
 
-    @State private var backgroundTasks: [DeveloperTaskEntity] = DeveloperTaskEntity.mock
-    @State private var toDoTasks: [DeveloperTaskEntity] = []
+    @State private var toDoTasks: [DeveloperTaskEntity] = DeveloperTaskEntity.mock
     @State private var inProgressTasks: [DeveloperTaskEntity] = []
     @State private var doneTasks: [DeveloperTaskEntity] = []
 
@@ -20,31 +19,13 @@ struct MainView: View {
     @State private var isDoneTargeted = false
 
     var body: some View {
-        HStack(spacing: 12) {
-            let background = KanbanEntity(id: UUID(),
-                                      title: "BACKGROUND",
-                                      subtitle: "Todo subtitle",
-                                      backgroundColor: .cyan,
-                                      tasks: backgroundTasks,
-                                      isTargeted: isBackGroundTargeted)
-            KanbanView(kanban: background)
-                .dropDestination(for: DeveloperTaskEntity.self) { dropped, _ in
-                    dropped.forEach { task in
-                        inProgressTasks.removeAll { $0.id == task.id }
-                        doneTasks.removeAll { $0.id == task.id }
-                    }
-                    let totalTasks = toDoTasks + dropped
-                    toDoTasks = Array(Set(totalTasks))
-                    return true
-                } isTargeted: { isTargeted in
-                    isToDoTargeted = isTargeted
-                }
+        HStack(spacing: 4) {
             let todo = KanbanEntity(id: UUID(),
                                       title: "TODO",
                                       subtitle: "Todo subtitle",
                                       backgroundColor: .cyan,
                                       tasks: toDoTasks,
-                                      isTargeted: isDoneTargeted)
+                                      isTargeted: isToDoTargeted)
             KanbanView(kanban: todo)
                 .dropDestination(for: DeveloperTaskEntity.self) { dropped, _ in
                     dropped.forEach { task in
@@ -52,7 +33,7 @@ struct MainView: View {
                         doneTasks.removeAll { $0.id == task.id }
                     }
                     let totalTasks = toDoTasks + dropped
-                    toDoTasks = Array(Set(totalTasks))
+                    toDoTasks = totalTasks.removeDuplicates
                     return true
                 } isTargeted: { isTargeted in
                     isToDoTargeted = isTargeted
@@ -70,7 +51,7 @@ struct MainView: View {
                         doneTasks.removeAll { $0.id == task.id }
                     }
                     let totalTasks = inProgressTasks + dropped
-                    inProgressTasks = Array(Set(totalTasks))
+                    inProgressTasks = totalTasks.removeDuplicates
                     return true
                 } isTargeted: { isTargeted in
                     isInProgressTargeted = isTargeted
@@ -88,13 +69,13 @@ struct MainView: View {
                         toDoTasks.removeAll { $0.id == task.id }
                     }
                     let totalTasks = doneTasks + dropped
-                    doneTasks = Array(Set(totalTasks))
+                    doneTasks = totalTasks.removeDuplicates
                     return true
                 } isTargeted: { isTargeted in
                     isDoneTargeted = isTargeted
                 }
         }
-        .padding()
+        .padding(4)
     }
 }
 
