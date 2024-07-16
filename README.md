@@ -55,7 +55,6 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use and 
 
 ## Acknowledgements
 
-- The project was inspired by the creativity of the creators of Rick and Morty.
 - Thanks to the community for providing feedback and suggestions for improvement.
 
 
